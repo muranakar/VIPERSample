@@ -36,7 +36,7 @@ extension ArticleDetailViewController: UITableViewDelegate, UITableViewDataSourc
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = Row.rows[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: row.rawValue, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         if row == .title {
             cell.textLabel?.text = "タイトル"
