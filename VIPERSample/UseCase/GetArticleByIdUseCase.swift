@@ -10,8 +10,35 @@ import Foundation
 class GetArticleByIdUseCase: UseCaseProtocol {
 
     func execute(_ parameter: Int, completion: ((Result<ArticleEntity, Error>) -> ())?) {
-        let res = ArticleEntity(id: 1, userId: 1, title: "タイトル", body: "本文")
+            let session = URLSession(configuration: .default)
+            let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(parameter)")!
+            let task = session.dataTask(with: url) { data, response, error in
+                if let error = error {
+                    DispatchQueue.main.async {
+                        completion?(.failure(error))
+                    }
+                    return
+                }
+                guard
+                    let data = data,
+                    let decoded = try? JSONDecoder().decode(ArticleEntity.self,
+                                                            from: data)
+                    else {
+                        let error = NSError(
+                            domain: "parse-error",
+                            code: 1,
+                            userInfo: nil
+                        )
+                        DispatchQueue.main.async {
+                            completion?(.failure(error))
+                        }
+                        return
+                }
 
-        completion?(.success(res))
-    }
+                DispatchQueue.main.async {
+                    completion?(.success(decoded))
+                }
+            }
+            task.resume()
+        }
 }
