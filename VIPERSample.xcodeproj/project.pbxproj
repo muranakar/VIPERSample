@@ -21,6 +21,7 @@
 		B2F05C442A21517E00673CED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F05C432A21517E00673CED /* SceneDelegate.swift */; };
 		B2F05C4B2A21518000673CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F05C4A2A21518000673CED /* Assets.xcassets */; };
 		B2F05C4E2A21518000673CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F05C4C2A21518000673CED /* LaunchScreen.storyboard */; };
+		B2FBE7412A2AAC1700BE6AC9 /* ArticleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBE7402A2AAC1700BE6AC9 /* ArticleDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B2F05C4A2A21518000673CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F05C4D2A21518000673CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F05C4F2A21518000673CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FBE7402A2AAC1700BE6AC9 /* ArticleDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B27132312A29F5D900AA221B /* ArticleListPresenter.swift */,
+				B2FBE7402A2AAC1700BE6AC9 /* ArticleDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				B2F05C422A21517E00673CED /* AppDelegate.swift in Sources */,
 				B297BD102A2827CB00BEE3A9 /* UseCase.swift in Sources */,
 				B2F05C442A21517E00673CED /* SceneDelegate.swift in Sources */,
+				B2FBE7412A2AAC1700BE6AC9 /* ArticleDetailPresenter.swift in Sources */,
 				B271322F2A29F54600AA221B /* ArticleListRouter.swift in Sources */,
 				B297BD062A28242B00BEE3A9 /* ArticleDetailViewController.swift in Sources */,
 				B271322A2A29F36D00AA221B /* GetArticlesArrayUseCase.swift in Sources */,
