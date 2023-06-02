@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B271322A2A29F36D00AA221B /* GetArticlesArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27132292A29F36D00AA221B /* GetArticlesArrayUseCase.swift */; };
 		B271322C2A29F44B00AA221B /* GetArticleByIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271322B2A29F44B00AA221B /* GetArticleByIdUseCase.swift */; };
+		B271322F2A29F54600AA221B /* ArticleListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271322E2A29F54600AA221B /* ArticleListRouter.swift */; };
 		B297BD042A2823E300BEE3A9 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297BD032A2823E300BEE3A9 /* ArticleListViewController.swift */; };
 		B297BD062A28242B00BEE3A9 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297BD052A28242B00BEE3A9 /* ArticleDetailViewController.swift */; };
 		B297BD082A28248400BEE3A9 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297BD072A28248400BEE3A9 /* ArticleList.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		B27132292A29F36D00AA221B /* GetArticlesArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesArrayUseCase.swift; sourceTree = "<group>"; };
 		B271322B2A29F44B00AA221B /* GetArticleByIdUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleByIdUseCase.swift; sourceTree = "<group>"; };
+		B271322E2A29F54600AA221B /* ArticleListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListRouter.swift; sourceTree = "<group>"; };
 		B297BD032A2823E300BEE3A9 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		B297BD052A28242B00BEE3A9 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		B297BD072A28248400BEE3A9 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B271322D2A29F53500AA221B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B271322E2A29F54600AA221B /* ArticleListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		B297BD0B2A28270500BEE3A9 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 				B297BD072A28248400BEE3A9 /* ArticleList.storyboard */,
 				B297BD092A28249200BEE3A9 /* ArticleDetail.storyboard */,
 				B297BD052A28242B00BEE3A9 /* ArticleDetailViewController.swift */,
+				B271322D2A29F53500AA221B /* Router */,
 				B297BD0E2A2827B400BEE3A9 /* UseCase */,
 				B297BD0B2A28270500BEE3A9 /* Entity */,
 				B2F05C472A21517E00673CED /* Main.storyboard */,
@@ -187,6 +198,7 @@
 				B2F05C422A21517E00673CED /* AppDelegate.swift in Sources */,
 				B297BD102A2827CB00BEE3A9 /* UseCase.swift in Sources */,
 				B2F05C442A21517E00673CED /* SceneDelegate.swift in Sources */,
+				B271322F2A29F54600AA221B /* ArticleListRouter.swift in Sources */,
 				B297BD062A28242B00BEE3A9 /* ArticleDetailViewController.swift in Sources */,
 				B271322A2A29F36D00AA221B /* GetArticlesArrayUseCase.swift in Sources */,
 			);
