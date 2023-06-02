@@ -11,10 +11,13 @@ import UIKit
 
 class ArticleListViewController: UIViewController {
 
+    var presenter: ArticleListPresenterProtocol!
+
     @IBOutlet private weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.didLoad()
     }
 }
 
