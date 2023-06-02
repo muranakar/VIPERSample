@@ -27,9 +27,11 @@ class ArticleListPresenter {
     }
 
     weak var view: ArticleListViewProtocol!
+    private var di: Dependency
 
-    init(view: ArticleListViewProtocol) {
+    init(view: ArticleListViewProtocol, inject dependency: Dependency) {
         self.view = view
+        self.di = dependency
     }
 }
 
