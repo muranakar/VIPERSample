@@ -33,6 +33,20 @@ class ArticleListPresenter {
 extension ArticleListPresenter: ArticleListPresenterProtocol {
 
     func didLoad() {
+        GetArticlesArrayUseCase().execute(()) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let articleEntities):
+                if articleEntities.isEmpty {
+                    self.view.showEmpty()
+                    return
+                }
+                self.view.showArticles(articleEntities)
+            case .failure(let error):
+                self.view.showError(error)
+            }
+        }
 
     }
 
