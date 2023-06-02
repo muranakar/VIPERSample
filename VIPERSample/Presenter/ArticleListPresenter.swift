@@ -21,6 +21,10 @@ protocol ArticleListViewProtocol: AnyObject {
 }
 
 class ArticleListPresenter {
+    struct Dependency {
+        let router: ArticleListRouterProtocol!
+        let getArticlesArrayUseCase: UseCase<Void, [ArticleEntity], Error>
+    }
 
     weak var view: ArticleListViewProtocol!
 
@@ -35,7 +39,6 @@ extension ArticleListPresenter: ArticleListPresenterProtocol {
     func didLoad() {
         GetArticlesArrayUseCase().execute(()) { [weak self] result in
             guard let self = self else { return }
-            
             switch result {
             case .success(let articleEntities):
                 if articleEntities.isEmpty {
