@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B271322A2A29F36D00AA221B /* GetArticlesArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27132292A29F36D00AA221B /* GetArticlesArrayUseCase.swift */; };
 		B297BD042A2823E300BEE3A9 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297BD032A2823E300BEE3A9 /* ArticleListViewController.swift */; };
 		B297BD062A28242B00BEE3A9 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297BD052A28242B00BEE3A9 /* ArticleDetailViewController.swift */; };
 		B297BD082A28248400BEE3A9 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297BD072A28248400BEE3A9 /* ArticleList.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B27132292A29F36D00AA221B /* GetArticlesArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesArrayUseCase.swift; sourceTree = "<group>"; };
 		B297BD032A2823E300BEE3A9 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		B297BD052A28242B00BEE3A9 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		B297BD072A28248400BEE3A9 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B297BD0F2A2827CB00BEE3A9 /* UseCase.swift */,
+				B27132292A29F36D00AA221B /* GetArticlesArrayUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				B297BD102A2827CB00BEE3A9 /* UseCase.swift in Sources */,
 				B2F05C442A21517E00673CED /* SceneDelegate.swift in Sources */,
 				B297BD062A28242B00BEE3A9 /* ArticleDetailViewController.swift in Sources */,
+				B271322A2A29F36D00AA221B /* GetArticlesArrayUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
