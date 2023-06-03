@@ -15,6 +15,7 @@ protocol ArticleListRouterProtocol: AnyObject {
 
 class ArticleListRouter: ArticleListRouterProtocol {
 
+    // weakだとnilを許容してしまう。unownedだとnilを許容しない。
     unowned var view: UIViewController!
 
     init(view: UIViewController) {
