@@ -22,7 +22,7 @@ protocol ArticleListViewProtocol: AnyObject {
 
 class ArticleListPresenter {
     struct Dependency {
-        let router: ArticleListRouterProtocol!
+        let router: ArticleListRouterProtocol
         let getArticlesArrayUseCase: UseCase<Void, [ArticleEntity], Error>
     }
 
