@@ -38,11 +38,11 @@ extension ArticleDetailViewController: UITableViewDelegate, UITableViewDataSourc
         let row = Row.rows[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        if row == .title {
+        switch row {
+        case .title:
             cell.textLabel?.text = "タイトル"
             cell.detailTextLabel?.text = "記事のタイトル"
-        }
-        if row == .body {
+        case .body:
             cell.textLabel?.text = "記事の本文"
             cell.detailTextLabel?.text = nil
         }
