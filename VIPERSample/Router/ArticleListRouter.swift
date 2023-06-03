@@ -15,7 +15,7 @@ protocol ArticleListRouterProtocol: AnyObject {
 
 class ArticleListRouter: ArticleListRouterProtocol {
 
-    weak var view: UIViewController!
+    unowned var view: UIViewController!
 
     init(view: UIViewController) {
         self.view = view
